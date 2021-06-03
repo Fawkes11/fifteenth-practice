@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+$fonthead: Poppins, sans-serif;
+$fontbody:  Open Sans, sans-serif;
+
+$pink: hsl(322, 100%, 66%);
+$lightpink: hsl(321, 100%, 78%);
+$lightred: hsl(0, 100%, 63%);
+$verydarkcyan: hsl(192, 100%, 9%);
+$verydarkcyanlight: hsla(192, 100%, 9%,0.6);
+$verydarkcyantext: hsla(192, 100%, 9%,0.8);
+$verypaleblue: hsl(207, 100%, 98%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: $fontbody;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    font-family: $fonthead;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 90%;
+    img{
+        width: 100px;
+    }
+    .free__btn{
+        height: 30px;
+        width: 100px;
+        border: 1px solid $lightpink;
+        border-radius: 25px;
+        background-color: white;
+        color: $lightpink;
+    }
+}
+
+.intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 85px;
+}
+.main__tittle{
+    width: 90%;
+    font-size: 25px;
+    font-weight: 700;
+    color: $verydarkcyan;
+}
+.main__info{
+    width: 90%;
+    padding-top: 30px;
+    font-size: 14px;
+    color: $verydarkcyan;
+}
+.info__btn{
+    margin-top: 50px;
+    height: 40px;
+    width: 220px;
+    border: none;
+    background-color: $pink;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 3px $verydarkcyan;
+}
+.main__image{
+    width: 100%;
+    margin-top: 100px;
+    img{
+        width: 95%;
+    }
+}
+.members__info{
+    position: relative;
+    margin-top: 100px;
+    width: 60%;
+
+    .communities{
+        text-align: left;
+        
+        img{
+            margin-left: 20px;           
+            width: 30px;
+        }
+        .comunities__number{
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .communities__description{
+            text-align: center;
+            color: $verydarkcyanlight;
+        }
+    }
+
+    .messages{
+        margin-top: 100px;
+        text-align: left;
+        
+        img{
+            margin-left: 20px;           
+            width: 30px;
+        }
+        .messages__number{
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        .messages__description{
+            text-align: center;
+            color: $verydarkcyanlight;
+        }
+    }
+}
+
+.description{
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    .grow{
+        position: relative;
+        background-color: $verypaleblue;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+
+        .grow__tittle{
+            font-size: 22px;
+            font-weight: 700;
+            color: $verydarkcyan;
+        }
+        .grow__info{
+            font-size: 15px;
+            margin-top: 25px;
+            font-weight: 600;
+            color: $verydarkcyantext;
+        }
+        .grow__img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+    
+}
+.grow::before{
+    content: '';
+    position: absolute;
+    top: -112px;
+    min-width: 100%;
+    height: 100%;
+    background: url(../images/bg-section-top-mobile-1.svg) no-repeat;
+    background-size: contain;
+
+
+    z-index: -1;
+}
+.grow::after{
+    content: '';
+    position: absolute;
+    bottom:-112px;
+    left: 0;
+    width: 100%;
+    height: 112px;
+    background-image: url(../images/bg-section-bottom-mobile-1.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.flowing{
+    margin-top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social__reds{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.75rem;
+
+
+    .fab{
+        cursor: pointer;
+        border: 1px solid red;
+        padding: 0.5rem;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        color: white;        
+    }
+    .fab:hover{        
+        background-color: black;
+        color: white;
+        border: 1px solid black;        
+    }
+    .fa-facebook-f{
+        padding: 0.5rem 0.7rem;
+    }
+}
